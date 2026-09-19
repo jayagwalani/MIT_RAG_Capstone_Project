@@ -1,0 +1,1131 @@
+[2026-09-05T19:14:14] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405432851271), ('DBLP_journals_corr_abs-2302-01976', 0.9869492797708919)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+“**Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.**”
+------------------------------------------------------------------------
+[2026-09-05T19:14:16] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_conf_aplas_Solar-Lezama09', 0.9999797223882712), ('DBLP_journals_corr_abs-2503-22625', 0.963693369719872), ('DBLP_journals_fmsd_FismanSS21', 0.9457696257113974)]
+verdict=fail
+answer=From the provided documents, Armando Solar-Lezama is listed as an author or co-author on these papers:
+
+1. **“The Sketching Approach to Program Synthesis”** — Armando Solar-Lezama  
+   - The document header and abstract identify him as the author: “**Armando Solar-Lezama**”.
+
+2. **“Challenges and Paths Towards AI for Software Engineering”** — Alex Gu, Naman Jain, Wen-Ding Li, Manish Shetty, Yijia Shao, Ziyang Li, Diyi Yang, Kevin Ellis, Koushik Sen, **Armando Solar-Lezama**  
+   - He is listed in the author list at the top of the paper.
+
+3. **“Special Issue on Syntax-Guided Synthesis Preface”** — Dana Fisman, Rishabh Singh, **Armando Solar-Lezama**  
+   - The title page lists: “**Dana Fisman · Rishabh Singh · Armando Solar-Lezama**”.
+
+If you want, I can also format these as a simple bullet list with years and venues, but the documents only explicitly provide the venue/year for some of them.
+------------------------------------------------------------------------
+[2026-09-05T19:14:19] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2502-16671', 0.9999876503451011), ('DBLP_journals_corr_abs-2503-22625', 0.9967747557704945), ('DBLP_conf_icml_GuJLSESS25', 0.971723343394246)]
+verdict=fail
+answer=Based on the provided documents, Armando Solar-Lezama’s work here is primarily focused on **AI for software engineering / AI for code**.
+
+The software engineering paper says the goal is to discuss “**tasks, challenges, and promising directions towards achieving this goal**” in AI software engineering, and the abstract calls it “**AI for software engineering**” with tasks like code generation, code transformation, testing, maintenance, and formal verification.
+
+He is also an author on MIMEQA, but that paper’s focus is different: “**socially-intelligent nonverbal foundation models**.” So, **across this collection, the clearest primary research focus is AI for software engineering**.
+------------------------------------------------------------------------
+[2026-09-05T19:14:23] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_sat_Inala0S16', 0.9325371775273477), ('DBLP_journals_corr_EllisRST17', 0.908670900952177), ('DBLP_conf_nips_EllisRST18', 0.9060732464538281)]
+verdict=fail
+answer=The papers describe scalable program synthesis in two main ways:
+
+1. **Using program synthesis with a learned proposal to guide search.**  
+   In *Learning to Infer Graphics Programs from Hand-Drawn Images*, the authors say they “**use program synthesis techniques to recover a graphics program from that spec**” and that they “**learn models that accelerate inference**,” specifically by training a neural network to “**amortize the cost of synthesizing programs from specs**.” They also note they use “**a variant of Bias–Optimal Search**” for this purpose.
+
+2. **Framing synthesis as a SyGuS problem with templates and specifications.**  
+   In *Synthesis of Domain Specific CNF Encoders for Bit-Vector Solvers*, the authors say OptCNF “**frames the task of generating these encoders as a Syntax Guided Synthesis problem (SyGuS)**,” where “**a SyGuS problem is a combination of a template grammar ... and a specification**.” They emphasize that “**the template and specification are very crucial in determining the scalability of the problem**.”
+
+The CNF-encoder paper also says scalability is improved by:
+- synthesizing from “**high-level hypothesis about the structure of the encoding**,”
+- using “**auto-tuning**,” and
+- focusing on “**larger clusters of terms**” rather than individual operations.
+
+If you want, I can also compare the two papers’ scalability strategies side by side.
+------------------------------------------------------------------------
+[2026-09-05T19:14:26] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_journals_tog_WillisPLCDLSM21', 0.9404927006774297), ('DBLP_conf_icml_GuJLSESS25', 0.9331629007175475)]
+verdict=pass
+answer=Across the provided papers, Armando Solar-Lezama appears in work on these research areas:
+
+- **AI for software engineering**  
+  The papers “Challenges and Paths Towards AI for Software Engineering” and “Position: Future Research and Challenges Remain Towards AI for Software Engineering” are explicitly about AI for software engineering, including “tasks, challenges, and promising directions” and a taxonomy of software-engineering tasks.
+
+- **Programmatic CAD / computer-aided design**  
+  In “Fusion 360 Gallery: A Dataset and Environment for Programmatic CAD Construction from Human Design Sequences,” the paper is about “parametric computer-aided design (CAD)” and introduces a dataset and environment for “programmatic CAD construction” and “CAD reconstruction.”
+
+- **Program synthesis / neurally guided search**  
+  The CAD paper says it develops “neurally guided search approaches” and uses “state-of-the-art methods of program synthesis” for CAD reconstruction.
+
+- **Software testing, program analysis, repair, maintenance, and verification**  
+  These are all represented as task areas in the AI-for-software-engineering papers. The taxonomy includes “Software Testing and Program Analysis,” “Program Repair,” “Software Maintenance,” and “Formal Verification.”
+
+So, summarizing the collection: Armando Solar-Lezama’s papers here span **AI for software engineering, programmatic CAD/CAD reconstruction, program synthesis, software testing and analysis, program repair, software maintenance, and formal verification**.
+------------------------------------------------------------------------
+[2026-09-05T19:14:29] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:22:50] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405450793504), ('DBLP_journals_corr_abs-2302-01976', 0.9869492818214571)]
+verdict=pass
+answer=The first sentence is: “Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:22:53] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9636933656185207), ('DBLP_journals_fmsd_FismanSS21', 0.9457696186645838), ('DBLP_conf_icml_GuJLSESS25', 0.9269851857970588)]
+verdict=pass
+answer=Armando Solar-Lezama appears as an author or co-author in the provided documents for these papers:
+
+1. **“Challenges and Paths Towards AI for Software Engineering”**  
+   - Authors listed include: “Alex Gu … Koushik Sen, **Armando Solar-Lezama**”
+   - The document also shows the related ICML paper **“Position: Future Research and Challenges Remain Towards AI for Software Engineering”**, which lists “**Armando Solar-Lezama**” among the authors.
+
+2. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - In the author line: “Dana Fisman · Rishabh Singh · **Armando Solar-Lezama**”
+
+So, from the provided documents, the papers are:
+- **Challenges and Paths Towards AI for Software Engineering**
+- **Position: Future Research and Challenges Remain Towards AI for Software Engineering**
+- **Special Issue on Syntax-Guided Synthesis Preface**
+------------------------------------------------------------------------
+[2026-09-05T19:22:55] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704947), ('DBLP_conf_icml_GuJLSESS25', 0.9717233433942458), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285266)]
+verdict=fail
+answer=Based on the documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / formal methods for software construction**.
+
+The clearest evidence is the 2021 Formal Methods in System Design preface, which says:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**”
+- It also frames the area as research on “**program synthesis and program optimization**”
+
+In the AI for software engineering paper, Solar-Lezama is also an author, but that paper is a broad survey. The more specific paper in the collection points to his core area being **synthesis**, especially **syntax-guided synthesis** and related formal methods.
+------------------------------------------------------------------------
+[2026-09-05T19:22:59] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_sat_Inala0S16', 0.9325371775273474), ('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236348), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112508608007)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and **decomposition**.
+
+From *Program Synthesis from Polymorphic Refinement Types*, the authors say:
+
+- “**The key to scalable program synthesis is modular verification.**”
+- “Modularity enables the synthesizer to **prune candidates for different subprograms independently**, whereby **combinatorially reducing the size of the search space**.”
+
+They explain that their synthesis method uses **polymorphic refinement types** because they provide “**a unique combination of expressive power and decidability**,” and because “**a type-based specification for a program can often be effectively decomposed into independent specifications for its components**.”
+
+The paper also says their core technique is a new type-checking algorithm that supports this decomposition:
+
+- “**At the core of our synthesis procedure is a new algorithm for refinement type checking, which supports specification decomposition.**”
+
+In *Synthesis of Domain Specific CNF Encoders for Bit-Vector Solvers*, scalability comes from a different but related combination of techniques:
+
+- “**program synthesis and machine learning technology**”
+- using “**auto-tuning**” to choose the best encoding for a domain
+- and identifying “**commonly occurring clusters of terms in a given domain**” so the system can “**focus on finding optimal encodings for such clusters**.”
+
+That paper also summarizes the system as:
+
+- “**Pattern Finding (Sampling)**”
+- “**Synthesis of Encoders (Sketch)**”
+- “**Code Generation**”
+- “**Auto-tuning (Machine Learning)**”
+
+So, across the papers, scalable synthesis is described as using:
+1. **modular/specification-decomposed reasoning**,
+2. **synthesis guided by rich but decidable specifications**,
+3. **incremental or local checking**, and
+4. in the CNF encoder paper, **domain-specific clustering plus auto-tuning** to specialize the synthesized solutions.
+------------------------------------------------------------------------
+[2026-09-05T19:23:03] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_journals_tog_WillisPLCDLSM21', 0.9404927006774297), ('DBLP_conf_icml_GuJLSESS25', 0.9331629007175474)]
+verdict=pass
+answer=Across the papers in this collection authored by Armando Solar-Lezama, the represented research areas are:
+
+- **AI for Software Engineering**
+  - The paper explicitly says it provides a taxonomy of tasks in “AI for software engineering” and discusses “tasks, challenges, and promising directions.”
+  - It covers areas such as:
+    - code generation
+    - code transformation
+    - software testing and program analysis
+    - software maintenance
+    - scaffolding and meta-code
+    - formal verification
+
+- **Programmatic CAD / Computer-Aided Design**
+  - The CAD paper is about “programmatic CAD construction from human design sequences.”
+  - It introduces “the first dataset of human designed CAD geometries” and an environment for executing CAD programs.
+  - It specifically concerns “CAD reconstruction from input geometry” and learning-based program synthesis for CAD.
+
+- **Program Synthesis / Search-Based Program Reconstruction**
+  - In the CAD paper, the method is described as “neurally guided search” for recovering CAD programs from target geometry.
+  - This places the work in program synthesis and search-guided reconstruction.
+
+- **Machine Learning for Code / Learning-Based Software Tools**
+  - The software engineering paper discusses “training,” “reinforcement learning,” “inference time approaches,” and “retrieval,” showing a strong ML-for-code angle.
+  - The CAD paper also says the environment is “amenable to machine learning approaches.”
+
+- **Formal Verification / Mathematical Reasoning**
+  - The software engineering paper explicitly includes “Formal Verification.”
+  - It also mentions overlap with “formal mathematical reasoning.”
+
+- **Software Testing and Program Analysis**
+  - These are named as a major task area in the software engineering paper.
+
+- **Code Repair / Maintenance / Refactoring**
+  - The software engineering paper includes “Program Repair” and “Software Maintenance,” including “Code Refactoring,” documentation, PR review, and code understanding.
+
+So, summarizing the collection as represented by Armando Solar-Lezama’s papers, the main research areas are **AI for software engineering, program synthesis, CAD/programmatic design, machine learning for code, formal verification, software testing and program analysis, and software maintenance/code transformation**.
+
+If you want, I can also turn this into a paper-by-paper table with each area matched to the specific paper.
+------------------------------------------------------------------------
+[2026-09-05T19:23:06] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:26:13] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405452761506), ('DBLP_journals_corr_abs-2302-01976', 0.9869492817619162)]
+verdict=fail
+answer=The first sentence of the paper is:
+
+“Sequence‑specific RNA‑binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:26:15] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9636933656185209), ('DBLP_journals_fmsd_FismanSS21', 0.9457696186645839), ('DBLP_conf_icml_GuJLSESS25', 0.9269851481658617)]
+verdict=pass
+answer=From the provided documents, Armando Solar-Lezama is an author/co-author of:
+
+1. **“Challenges and Paths Towards AI for Software Engineering”**  
+   - Listed authors include “**Armando Solar-Lezama**” in the arXiv document.
+   - The ICML position paper also lists him as a co-author: “**Armando Solar-Lezama**.”
+
+2. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - Listed authors are “**Dana Fisman · Rishabh Singh · Armando Solar-Lezama**.”
+
+These are the papers in the provided documents that include Armando Solar-Lezama as an author or co-author.
+------------------------------------------------------------------------
+[2026-09-05T19:26:18] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704947), ('DBLP_conf_icml_GuJLSESS25', 0.9717233000096592), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285268)]
+verdict=fail
+answer=Based on the provided documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / syntax-guided synthesis**.
+
+The strongest evidence is from the 2021 formal methods paper:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**”
+- It also says the issue “features three papers that span different directions from the spectrum of research evolving around **syntax-guided synthesis**.”
+
+In the AI-for-software-engineering paper, Solar-Lezama is listed as an author, but that paper is broader; the formal methods document is the clearest indication of his core research area.
+------------------------------------------------------------------------
+[2026-09-05T19:26:22] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236349), ('DBLP_journals_corr_PolikarpovaS15', 0.892011249552254), ('DBLP_conf_iclr_InalaBTS20', 0.8570358615077835)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modular verification** and **type-directed search**.
+
+One paper says: “**The key to scalable program synthesis is modular verification. Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.**”
+
+They also emphasize that **types can prune the search early**: “**a type error can be detected long before the whole program is put together**.”
+
+In the refinement-types paper, scalability comes from using **polymorphic refinement types** and **decomposing specifications into independent requirements for components**. It says these types offer “**a unique combination of expressive power and decidability**,” and that “**a type-based specification for a program can often be effectively decomposed into independent specifications for its components**,” which reduces the search space.
+
+That paper also proposes **local liquid type checking**, described as a “**round-trip type checking mechanism**” that supports “**modular checking of function applications**” and “**modular checking of branching terms**.”
+
+In short, the papers portray scalable synthesis as coming from:
+- **modular verification**
+- **type-directed pruning**
+- **decomposing specifications into subproblems**
+- **local / incremental checking rather than whole-program search**
+
+The ICLR paper, while about learning rather than synthesis, similarly frames scalability through a structured policy class: state-machine policies with a small number of modes that can capture repeating behavior and generalize.
+------------------------------------------------------------------------
+[2026-09-05T19:26:26] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_journals_tog_WillisPLCDLSM21', 0.9404926993240971), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617322)]
+verdict=pass
+answer=Across the papers in this collection, Armando Solar-Lezama appears in at least two research areas represented by the documents:
+
+1. **AI for Software Engineering**
+   - In *“Challenges and Paths Towards AI for Software Engineering”* / *“Position: Future Research and Challenges Remain Towards AI for Software Engineering”*, the paper is explicitly about AI for software engineering, including tasks like “code generation,” “code transformation,” “software testing and program analysis,” “software maintenance,” “scaffolding and meta-code,” and “formal verification.”
+   - The abstract says the paper “provide[s] a structured taxonomy of concrete tasks in AI for software engineering” and discusses “challenges” and “promising research directions.”
+
+2. **Programmatic CAD / CAD Reconstruction**
+   - In *“Fusion 360 Gallery: A Dataset and Environment for Programmatic CAD Construction from Human Design Sequences,”* Armando Solar-Lezama is an author on a paper about parametric CAD and machine learning for CAD.
+   - The paper says it presents “a dataset of 8,625 human design sequences” and “an interactive environment called the Fusion 360 Gym,” and uses them for the “CAD reconstruction task of recovering a CAD program from a target geometry.”
+
+So, summarizing the research areas across all papers by Armando Solar-Lezama in the collection: **AI for software engineering** and **programmatic CAD / CAD reconstruction**.
+------------------------------------------------------------------------
+[2026-09-05T19:26:28] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:28:46] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.990040546033216), ('DBLP_journals_corr_abs-2302-01976', 0.9869492825189823)]
+verdict=fail
+answer=The first sentence is:
+
+“Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:28:48] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9636933697198717), ('DBLP_journals_fmsd_FismanSS21', 0.9457696257113973), ('DBLP_conf_icml_GuJLSESS25', 0.9269851524221224)]
+verdict=pass
+answer=From the provided documents, Armando Solar-Lezama is listed as an author or co-author on these papers:
+
+1. **“Challenges and Paths Towards AI for Software Engineering”**  
+   - Authors listed include **Armando Solar-Lezama**.
+
+2. **“Position: Future Research and Challenges Remain Towards AI for Software Engineering”**  
+   - Authors listed include **Armando Solar-Lezama**.
+
+3. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - Authors listed are **Dana Fisman, Rishabh Singh, and Armando Solar-Lezama**.
+
+I don’t see any other papers in the provided documents with Armando Solar-Lezama as an author/co-author.
+------------------------------------------------------------------------
+[2026-09-05T19:28:50] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704945), ('DBLP_conf_icml_GuJLSESS25', 0.971723300009659), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285266)]
+verdict=fail
+answer=Based on the documents, Armando Solar-Lezama’s primary research focus is **program synthesis and related formal methods**.
+
+The clearest evidence is from the 2021 formal methods paper, which says:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**”
+- and it discusses “**program synthesis and program optimization**” as the surrounding research area.
+
+In the AI-for-software-engineering paper, Solar-Lezama is also an author on a broad survey of software engineering tasks, but the collection’s formal-methods document most directly points to his core area as **synthesis**, especially **syntax-guided synthesis** and **program synthesis**.
+------------------------------------------------------------------------
+[2026-09-05T19:28:53] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.892011254747574), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112473732122), ('DBLP_conf_iclr_NyePBATS21', 0.8540088796760681)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity in verification and search**.
+
+One paper says: **“The key to scalable program synthesis is modular verification.”** It explains that modularity lets the synthesizer **“prune candidates for different subprograms independently,”** which **“combinatorially reduc[es] the size of the search space.”**
+
+For the reﬁnement-type paper, scalability comes from **type-directed synthesis** and **specification decomposition**:
+- reﬁnement types provide **“a unique combination of expressive power and decidability”**
+- the system can **“decompose into independent specifications for its components”**
+- it introduces **“local liquid type checking”** to support **“modular checking of function applications”** and **“modular checking of branching terms.”**
+
+For the neural synthesis paper, scalability comes from better representations of partial programs to guide search:
+- it frames synthesis as **“goal-conditioned search through the space of partial programs”**
+- it uses **“blended abstract semantics”** so partial programs can be represented by **“a flexible combination of concrete execution state and learned neural representations”**
+- this helps search **“to solve program synthesis tasks”** and use **“more powerful language constructs, such as loops and higher-order functions.”**
+
+So, in short, the papers present scalable synthesis as coming from:
+1. **modular verification / modular checking**
+2. **specification decomposition**
+3. **guided search over partial programs**
+4. **semantic representations of incomplete programs**
+------------------------------------------------------------------------
+[2026-09-05T19:28:56] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_journals_tog_WillisPLCDLSM21', 0.9404926993240971), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617323)]
+verdict=pass
+answer=Across the papers in this collection written by Armando Solar-Lezama, the represented research areas are:
+
+- **AI for software engineering**
+  - The survey paper explicitly covers “tasks in AI software engineering,” including “code generation,” “code transformation,” “software testing and program analysis,” “software maintenance,” “scaffolding and meta-code,” and “formal verification.”
+  - It also discusses challenges and future directions such as “evaluation and benchmarks,” “effective tool usage,” “human-AI collaboration,” “long-horizon code planning,” “large scope and long contexts,” “semantic understanding of codebases,” and more.
+
+- **Programmatic CAD / computer-aided design**
+  - The Fusion 360 Gallery paper is about “Programmatic CAD Construction from Human Design Sequences.”
+  - It presents “a dataset and environment for programmatic CAD construction,” and a task of “CAD reconstruction from a target geometry.”
+  - It is explicitly about “CAD datasets,” “construction sequences,” and “learning-based approaches with neurally guided search.”
+
+So, based on the provided documents, Armando Solar-Lezama appears in papers spanning **AI for software engineering** and **programmatic CAD / CAD reconstruction**.
+------------------------------------------------------------------------
+[2026-09-05T19:28:59] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:32:05] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.990040546033216), ('DBLP_journals_corr_abs-2302-01976', 0.9869492825189822)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+“Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:32:08] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9636933656185207), ('DBLP_journals_fmsd_FismanSS21', 0.9457696186645838), ('DBLP_conf_icml_GuJLSESS25', 0.9269851481658616)]
+verdict=pass
+answer=From the provided documents, Armando Solar-Lezama appears as an author or co-author on these papers:
+
+1. **“Challenges and Paths Towards AI for Software Engineering”**  
+   - Authors listed include: “Alex Gu … Armando Solar-Lezama asolar@csail.mit.edu”
+
+2. **“Position: Future Research and Challenges Remain Towards AI for Software Engineering”**  
+   - Authors listed include: “Alex Gu … Armando Solar-Lezama 1”
+
+3. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - Authors listed include: “Dana Fisman · Rishabh Singh · Armando Solar-Lezama”
+
+I don’t see any other papers in the provided documents with Armando Solar-Lezama listed as an author or co-author.
+------------------------------------------------------------------------
+[2026-09-05T19:32:10] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704945), ('DBLP_conf_icml_GuJLSESS25', 0.971723300009659), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285266)]
+verdict=fail
+answer=Based on the documents provided, Armando Solar-Lezama’s primary research focus appears to be **program synthesis and related formal methods**.
+
+The clearest evidence is from the 2021 paper, which says:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**”
+- It further describes “**research in program synthesis and program optimization**”
+
+In the AI for software engineering paper, Solar-Lezama is an author, but that paper is broader. From the collection here, his main area is **syntax-guided synthesis / program synthesis**, with connections to **program optimization** and **formal methods**.
+------------------------------------------------------------------------
+[2026-09-05T19:32:13] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236349), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112495522541), ('DBLP_conf_iclr_NyePBATS21', 0.8540088835154286)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on better representations of partial programs and stronger modular verification.
+
+From the refinement-types paper:
+
+- “The key to scalable program synthesis is modular verification.”
+- “Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.”
+- It says type-directed approaches help because “a type error can be detected long before the whole program is put together.”
+- The paper’s main technique is “local liquid type checking,” which uses “top-down propagation of over-approximate type information” and a “liquid abduction rule” to check subterms modularly.
+- It also says they combine this with exhaustive enumeration in S YNQUID and evaluated it on “64 synthesis problems.”
+
+From the blended-abstract-semantics paper:
+
+- Scalable synthesis needs a good way to represent partial programs during search: “a key challenge is representing the behavior of a partially written program before it can be executed.”
+- The paper introduces “neural abstract semantics” and “blended abstract semantics,” described as “a compositional, approximate execution model” for partial code.
+- The goal is to “represent the state of unﬁnished programs as faithfully as possible by concretely executing program components whenever possible, and otherwise, approximating program state with a learned abstract execution model.”
+- It says this helps synthesis engines “use more powerful language constructs, such as loops and higher-order functions,” and “outperforms neural synthesis baselines.”
+
+So, in short, the papers present scalable synthesis as coming from:
+1. modular verification / type-directed pruning, and
+2. compositional representations of partial programs for guided search.
+------------------------------------------------------------------------
+[2026-09-05T19:32:17] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617322), ('DBLP_conf_iclr_NyePBATS21', 0.8969420133435704)]
+verdict=pass
+answer=Across the papers in this collection written by Armando Solar-Lezama, the research areas represented are:
+
+1. **AI for Software Engineering / AI for Code**
+   - The 2025 paper is explicitly about “**AI for software engineering**” and gives a broad taxonomy of tasks in the area.
+   - It states that AI for software engineering has made “**remarkable progress**” and discusses “**tasks, challenges, and promising directions**” for the field.
+
+2. **Software Engineering Tasks and Automation**
+   - The 2025 paper covers many SWE subareas beyond code generation, including:
+     - **Code generation**
+     - **Code transformation**:
+       - code refactoring
+       - code migration and translation
+       - code optimization
+     - **Software testing and program analysis**
+       - software testing
+       - program analysis
+       - program repair
+     - **Software maintenance**
+       - documentation and summarization
+       - pull request review
+       - code understanding, navigation, and question answering
+     - **Scaffolding and meta-code**
+     - **Formal verification**
+
+3. **Program Synthesis**
+   - The 2021 ICLR paper is about “**Representing Partial Programs with Blended Abstract Semantics**.”
+   - It frames the work around “**synthesizing programs from examples**” and “**program synthesis tasks**.”
+
+4. **Neural Program Synthesis / Search-Guided Synthesis**
+   - The 2021 paper focuses on “**neurally-guided program synthesis**” and “**search over the space of possible programs**.”
+   - It introduces methods to guide synthesis by representing partially written programs semantically.
+
+5. **Abstract Interpretation / Program Semantics**
+   - The 2021 paper explicitly draws from “**abstract interpretation**” and proposes “**neural abstract semantics**” and “**blended abstract semantics**.”
+   - So it sits at the intersection of synthesis and semantic reasoning over programs.
+
+6. **Machine Learning for Code**
+   - Both papers place the work within applying ML/AI to programming.
+   - The 2025 paper mentions generative AI and LLM-related SWE problems; the 2021 paper uses neural methods for synthesis.
+
+In short, the collection spans **AI for software engineering**, **program synthesis**, **neural-guided search for code**, and **program semantics / abstract interpretation**, with the 2025 paper broadening into many software engineering subdomains and the 2021 paper focusing more specifically on synthesis.
+------------------------------------------------------------------------
+[2026-09-05T19:32:20] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:36:45] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151967)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+> “Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:36:47] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9636933656185207), ('DBLP_journals_fmsd_FismanSS21', 0.9457696186645838), ('DBLP_conf_icml_GuJLSESS25', 0.9269851857970589)]
+verdict=pass
+answer=From the provided documents, Armando Solar-Lezama appears as an author/co-author on these papers:
+
+1. **Challenges and Paths Towards AI for Software Engineering** — listed among the authors in the arXiv paper.
+2. **Position: Future Research and Challenges Remain Towards AI for Software Engineering** — listed among the authors in the ICML 2025 paper.
+3. **Special Issue on Syntax-Guided Synthesis Preface** — co-authored by Dana Fisman, Rishabh Singh, and **Armando Solar-Lezama**.
+
+I don’t see any other documents here that list him as an author.
+------------------------------------------------------------------------
+[2026-09-05T19:36:49] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747612137625), ('DBLP_conf_icml_GuJLSESS25', 0.9717233056437578), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285267)]
+verdict=fail
+answer=Based on the documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / synthesis-guided methods**, especially **syntax-guided synthesis**.
+
+The clearest evidence is from the 2021 FMSD preface, which says:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**.”
+- It also describes the area as “**research evolving around syntax-guided synthesis**.”
+
+In the AI-for-software-engineering paper, his work is connected to broader software engineering, but the documents you provided most directly tie him to **program synthesis** and **formal methods**.
+------------------------------------------------------------------------
+[2026-09-05T19:36:53] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236349), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112495522541), ('DBLP_conf_iclr_NyePBATS21', 0.8540088835154285)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and **good representations of partial programs**.
+
+From the reﬁnement-types paper, scalability comes from modular verification:
+
+- “**The key to scalable program synthesis is modular verification.**”
+- “Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space.”
+
+It also says that reﬁnement types help because they allow the spec to be decomposed:
+
+- “a type-based specification for a program can often be effectively decomposed into independent specifications for its components”
+- and the system uses “**local liquid type checking**” to support this decomposition.
+
+The paper emphasizes that this lets synthesis use top-down guidance from the spec:
+
+- “propagate type information top-down from the specification, using it to filter out irrelevant partial solutions.”
+
+The ICLR paper describes scalability in terms of **representing partial programs effectively during search**:
+
+- “Synthesizing programs from examples requires searching over a vast, combinatorial space of possible programs.”
+- A key challenge is “**representing the behavior of a partially written program before it can be executed**.”
+- It proposes “**blended abstract semantics**,” combining “concrete execution state and learned neural representations” to guide search.
+
+So, in short: one paper argues scalable synthesis comes from **modular type-based verification and specification decomposition**, while the other argues it comes from **better semantic representations of partial programs** to guide search over a large space.
+------------------------------------------------------------------------
+[2026-09-05T19:36:57] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617323), ('DBLP_conf_iclr_NyePBATS21', 0.8969420133435705)]
+verdict=pass
+answer=Across the provided papers by Armando Solar-Lezama, the represented research areas are:
+
+- **AI for software engineering / software engineering automation**  
+  The 2025 paper is explicitly about “**AI for Software Engineering**” and discusses tasks, challenges, and directions for automation.
+
+- **Code generation and completion**  
+  The 2025 paper includes “**2.1 Code Generation**” and describes “**code completion**” and “natural language to code.”
+
+- **Code transformation**  
+  The 2025 paper covers “**Code Refactoring**,” “**Code Migration and Translation**,” and “**Code Optimization**.”
+
+- **Software testing and program analysis**  
+  The 2025 paper has a section “**2.3 Software Testing and Program Analysis**.”
+
+- **Software maintenance**  
+  The 2025 paper includes “**2.4 Software Maintenance**,” including documentation, PR review, and code understanding/navigation.
+
+- **Scaffolding and meta-code**  
+  Listed as “**2.5 Scaffolding and Meta-Code**” in the 2025 paper.
+
+- **Formal verification**  
+  The 2025 paper includes “**2.6 Formal Verification**.”
+
+- **Program synthesis / inductive program synthesis**  
+  The 2021 ICLR paper is about “**Synthesizing programs from examples**” and says, “**Inductive program synthesis – the problem of inferring programs from examples**.”
+
+- **Neural program synthesis / neurally-guided search**  
+  The 2021 paper states: “**In recent years, neurally-guided program synthesis… has emerged as a promising approach**.”
+
+- **Abstract interpretation / semantic program representations**  
+  The 2021 paper introduces “**blended abstract semantics**” and says it is “**inspired by abstract interpretation**.”
+
+So, in short, the collection spans **AI for software engineering**, **program synthesis**, **neural-guided synthesis/search**, **abstract interpretation and semantic program representation**, and the broad SWE task areas of **generation, transformation, testing/analysis, maintenance, scaffolding/meta-code, and formal verification**.
+------------------------------------------------------------------------
+[2026-09-05T19:37:00] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:40:33] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151966)]
+verdict=pass
+answer=The first sentence is:
+
+“Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:40:36] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.963693369719872), ('DBLP_journals_fmsd_FismanSS21', 0.9457696257113977), ('DBLP_journals_pacmpl_PolikarpovaSYIH20', 0.897676599541141)]
+verdict=fail
+answer=From the provided documents, Armando Solar-Lezama appears as an author/co-author on these papers:
+
+1. **“Challenges and Paths Towards AI for Software Engineering”**  
+   - The author list includes **Armando Solar-Lezama**.
+
+2. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - The author list includes **Armando Solar-Lezama**.
+
+3. **“Liquid Information Flow Control”**  
+   - The author list includes **Armando Solar-Lezama**.
+
+These are the only papers in the provided documents that list him as an author/co-author.
+------------------------------------------------------------------------
+[2026-09-05T19:40:38] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704945), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285267), ('DBLP_conf_aplas_2009', 0.9325483021562841)]
+verdict=pass
+answer=Based on the documents provided, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / software engineering**, especially **syntax-guided synthesis** and related automation for programming tasks.
+
+Evidence from the collection:
+- In the 2021 *Formal Methods in System Design* preface, he is listed as one of the authors of a special issue on **“Syntax-guided synthesis”**, which the document describes as a practical solution to **“the computationally hard problem of program synthesis.”**
+- In the 2025 paper *Challenges and Paths Towards AI for Software Engineering*, he is an author of a paper centered on **“AI for software engineering”**, covering tasks like code generation, code transformation, program repair, testing, and formal verification.
+
+So, from these documents, his main research area is **software/program synthesis and AI for software engineering**.
+------------------------------------------------------------------------
+[2026-09-05T19:40:42] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236349), ('DBLP_journals_corr_PolikarpovaS15', 0.892011249552254), ('DBLP_conf_iclr_NyePBATS21', 0.8540088835154285)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and on representing partial programs in ways that let the search space be pruned effectively.
+
+From the polymorphic refinement types papers:
+
+- They say, **“The key to scalable program synthesis is modular verification.”**
+- Modularity lets the synthesizer **“prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.”**
+- They also emphasize **type-directed synthesis**, where **“a type error can be detected long before the whole program is put together.”**
+- Their approach uses **reification types** so that specifications can often be **“decomposed into independent specifications for its components”**, which reduces the number of component combinations the synthesizer must consider.
+- They present **local liquid type checking** as a way to make this modular, including **top-down propagation of over-approximate type information** and a **“liquid abduction rule”** for branching terms.
+
+From the blended abstract semantics paper:
+
+- It frames scalability as searching over a **“vast, combinatorial space of possible programs.”**
+- To handle this, it introduces representations of partial programs using **“a flexible combination of concrete execution state and learned neural representations”**.
+- It explicitly says these hybrid representations **“enable execution-guided synthesizers to use more powerful language constructs, such as loops and higher-order functions,”** and improve accuracy for a given search budget.
+- The paper also says this is inspired by abstract interpretation, where an **“approximate execution model”** helps determine whether an unfinished program may satisfy a goal.
+
+So, in short: the papers describe scalable synthesis as coming from **modular verification / modular checking / decomposition of specifications** in the refinement-types work, and from **semantic representations of partial programs that guide search** in the neural synthesis work.
+------------------------------------------------------------------------
+[2026-09-05T19:40:45] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617322), ('DBLP_conf_iclr_NyePBATS21', 0.8969420133435704)]
+verdict=pass
+answer=Across the provided papers, Armando Solar-Lezama appears in research on these areas:
+
+- **AI for software engineering / AI for code**  
+  Both the arXiv and ICML position papers describe broad “AI for software engineering,” including “tasks, challenges, and promising directions” and a “taxonomy of tasks in AI software engineering.”
+
+- **Code generation and completion**  
+  The position paper explicitly lists “Code Generation” and discusses “code completion” and “natural language to code.”
+
+- **Code transformation**  
+  The paper covers “Code Refactoring,” “Code Migration and Translation,” and “Code Optimization.”
+
+- **Software testing and program analysis**  
+  The table of contents and text include “Software Testing and Program Analysis,” with “Software Testing,” “Program Analysis,” and “Program Repair.”
+
+- **Software maintenance**  
+  The paper includes “Code Documentation and Summarization,” “Pull Request (PR) Review,” and “Code Understanding, Navigation, and Question Answering.”
+
+- **Scaffolding and meta-code**  
+  This is listed as its own task area in the taxonomy.
+
+- **Formal verification**  
+  Also listed as a task area, and the introduction says the paper overlaps with “software verification” and “formal mathematical reasoning.”
+
+- **Program synthesis / synthesis from examples / neural-guided synthesis**  
+  The ICLR paper is specifically about “Representing Partial Programs with Blended Abstract Semantics,” and says: “Synthesizing programs from examples requires searching over a vast, combinatorial space of possible programs.”
+
+- **Abstract interpretation / semantic representations for partial programs**  
+  The ICLR paper says it is “inspired by the technique of abstract interpretation” and introduces “neural abstract semantics” and “blended abstract semantics.”
+
+- **Execution-guided search / neuro-symbolic program synthesis**  
+  The ICLR paper discusses “execution-guided synthesizers,” “search policies,” and “search heuristics.”
+
+So, summarizing broadly, the collection covers **AI for software engineering, program synthesis, code transformation, software testing and analysis, software maintenance, scaffolding/meta-code, formal verification, and abstract-interpretation-inspired neural representations for synthesis**.
+------------------------------------------------------------------------
+[2026-09-05T19:40:48] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:47:29] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151967)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+“**Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.**”
+------------------------------------------------------------------------
+[2026-09-05T19:47:32] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_fmsd_FismanSS21', 0.9457696257113973), ('DBLP_journals_corr_abs-1711-11438', 0.8960777521524289), ('DBLP_conf_snapl_2015', 0.8668720175278459)]
+verdict=fail
+answer=From the provided documents, Armando Solar-Lezama is listed as an author or co-author on these papers:
+
+1. **Special Issue on Syntax-Guided Synthesis Preface**  
+   - Authors: “Dana Fisman · Rishabh Singh · Armando Solar-Lezama”  
+   - Quote: “**Dana Fisman 1 · Rishabh Singh 1 · Armando Solar-Lezama 1**”
+
+2. **SyGuS-Comp 2017: Results and Analysis**  
+   - Authors: “Rajeev Alur, Dana Fisman, Rishabh Singh, and Armando Solar-Lezama”  
+   - Quote: “**c© Alur, Fisman, Singh & Solar-Lezama**” and “**Armando Solar-Lezama Massachusetts Institute of Technology**”
+
+3. **Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis**  
+   - Listed in the SNAPL 2015 contents
+   - Quote: “**Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis  
+     Alvin Cheung, Shoaib Kamil, and Armando Solar-Lezama**”
+
+Those are the papers in the provided documents where Armando Solar-Lezama appears as an author or co-author.
+------------------------------------------------------------------------
+[2026-09-05T19:47:34] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747557704945), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285266), ('DBLP_conf_aplas_2009', 0.9325483021562844)]
+verdict=pass
+answer=Based on the documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / software engineering automation**, especially **syntax-guided synthesis**.
+
+The clearest evidence is the 2021 paper:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**.”
+
+He is also listed as an author of the 2025 paper on:
+
+- “**Challenges and Paths Towards AI for Software Engineering**,”
+
+which is about “**tasks, challenges, and promising directions towards**” AI for software engineering.
+
+So, from the provided documents, his main focus is **program synthesis and AI for software engineering**.
+------------------------------------------------------------------------
+[2026-09-05T19:47:37] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112569236349), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112495522541), ('DBLP_conf_iclr_NyePBATS21', 0.8540088835154287)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and better representations of partial programs.
+
+From the reﬁnement-types paper:
+
+- “**The key to scalable program synthesis is modular veriﬁcation.** Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.”
+- It also says their method supports “**speciﬁcation decomposition**” and uses “**local liquid type checking**” with “**round-trip type checking**” and “**liquid abduction**” to check or synthesize parts of a program independently.
+- The paper emphasizes that this is meant to “**prune candidates for different subprograms independently**” and reduce the search space.
+
+From the blended abstract semantics paper:
+
+- It frames scalability as a search problem over a “**vast, combinatorial space of possible programs**.”
+- To make search scalable, it introduces “**a novel method for representing the semantic state of partially written programs**,” using “**neural abstract semantics**” and “**blended abstract semantics**.”
+- The idea is to represent unfinished programs with a combination of “**concrete execution state and learned neural representations**,” so the synthesizer can judge whether a partial program is “**on the right track**” and “**predict where to search next**.”
+
+So, in short, the papers describe scalable synthesis as being achieved by:
+1. **Modular verification / decomposition of specifications** to prune the search space early.
+2. **Local type checking and over-approximate reasoning** for partial programs.
+3. **Semantic representations of partial programs** (including learned abstract semantics) to guide search efficiently.
+
+If you want, I can also summarize the techniques paper by paper in a table.
+------------------------------------------------------------------------
+[2026-09-05T19:47:40] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617323), ('DBLP_conf_iclr_NyePBATS21', 0.8969420133435704)]
+verdict=pass
+answer=Across the papers in the collection, Armando Solar-Lezama is represented in two main research areas:
+
+1. **AI for Software Engineering / AI for Code**
+   - The first paper is about **“Challenges and Paths Towards AI for Software Engineering”**, which covers a broad taxonomy of SWE tasks and challenges such as:
+     - code generation
+     - code transformation
+     - software testing and program analysis
+     - software maintenance
+     - scaffolding and meta-code
+     - formal verification  
+   - The abstract says it provides “**a structured taxonomy of concrete tasks in AI for software engineering**,” discusses “**key bottlenecks**,” and proposes “**promising research directions**.”
+
+2. **Program Synthesis / Neural Program Synthesis**
+   - The second paper is **“Representing Partial Programs with Blended Abstract Semantics”**.
+   - Its abstract says it is about **“synthesizing programs from examples”** and “**representing the behavior of a partially written program**” during search.
+   - It focuses on:
+     - inductive program synthesis
+     - neurally-guided search
+     - abstract interpretation
+     - neural abstract semantics
+     - blended abstract semantics  
+   - The paper explicitly states: “**We introduce blended neural semantics**” for representing partial programs and use it in synthesis experiments.
+
+So, summarizing the collection: **Armando Solar-Lezama’s papers here span AI for software engineering and program synthesis, especially semantic representations for partial programs and broader automation of software engineering tasks.**
+------------------------------------------------------------------------
+[2026-09-05T19:47:42] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:49:00] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151967)]
+verdict=pass
+answer=The first sentence is:
+
+“**Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.**”
+------------------------------------------------------------------------
+[2026-09-05T19:49:05] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_fmsd_FismanSS21', 0.945769610049617), ('DBLP_conf_snapl_2015', 0.8668720175278459), ('DBLP_conf_aplas_2009', 0.8649938099382146)]
+verdict=fail
+answer=From the provided documents, Armando Solar-Lezama is listed as an author or co-author on these papers:
+
+1. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   > “Dana Fisman · Rishabh Singh · Armando Solar-Lezama”
+
+2. **“Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis”**  
+   > “Alvin Cheung, Shoaib Kamil, and Armando Solar-Lezama”
+
+3. **“Refutation-based synthesis in SMT”**  
+   This is cited in the FMSD preface as:  
+   > “Refutation-based synthesis in SMT [8]”  
+   and the reference entry lists the authors as:  
+   > “Reynolds A, Kuncak V, Tinelli C, Barrett CW, Deters Morgan (2019) Refutation-based synthesis in SMT.”
+
+4. **“An empirical study of adaptive concretization for parallel program synthesis”**  
+   This is cited in the FMSD preface as:  
+   > “An empirical study of adaptive concretization for parallel program synthesis [4]”  
+   and the reference entry lists the authors as:  
+   > “Jeon J, Qiu X, Solar-Lezama A, Foster JS (2017) An empirical study of adaptive concretization for parallel program synthesis.”
+
+5. **“Alloy*: a general-purpose higher-order relational constraint solver”**  
+   This is cited in the FMSD preface as:  
+   > “Alloy* a general-purpose higher-order relational constraint solver [6]”  
+   and the reference entry lists the authors as:  
+   > “Milicevic Aleksandar, Near Joseph P, Kang Eunsuk, Jackson Daniel (2019) Alloy*: a general-purpose higher-order relational constraint solver.”
+
+Only items 1, 2, and 4 explicitly show Armando Solar-Lezama as an author in the provided text. Items 3 and 5 are mentioned in the document, but Armando Solar-Lezama is **not** listed as an author there.
+------------------------------------------------------------------------
+[2026-09-05T19:49:07] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747687016569), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285266), ('DBLP_conf_aplas_2009', 0.9325483150873825)]
+verdict=pass
+answer=Based on the provided documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / automated program generation**, especially in the area of **syntax-guided synthesis** and related formal methods.
+
+Evidence from the documents:
+- The 2021 Formal Methods in System Design preface says: **“Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis.”**
+- It also describes program synthesis as the problem of deriving **“an executable implementation from a specification of a system given as a logical formula.”**
+- The APLAS 2009 proceedings list him as an invited speaker, but the document does not specify his research area there.
+- In the 2025 AI for Software Engineering paper, he is one of the authors on a paper about AI/software engineering, but the document does not identify his broader long-term focus beyond that.
+
+So, from these documents alone, the clearest answer is: **program synthesis, particularly syntax-guided synthesis**.
+------------------------------------------------------------------------
+[2026-09-05T19:49:11] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112648702107), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112574988297), ('DBLP_conf_iclr_NyePBATS21', 0.8540088914619709)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and better ways to represent or check **partial programs**.
+
+From the reﬁnement types paper:
+
+- “**The key to scalable program synthesis is modular verification.** Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.”
+- They also say their approach “**pushes the idea of type-directed synthesis one step further**” by using reﬁnement types, because these give “**a unique combination of expressive power and decidability**.”
+- Their main technique is “**local liquid type checking**,” which uses “**top-down propagation of over-approximate type information**” and a “**novel liquid abduction rule**” so subterms can be checked more independently.
+- In the synthesis system, they combine this with “**exhaustive enumeration of program terms**” in S YNQUID.
+
+From the ICLR paper on blended abstract semantics:
+
+- It says that in program synthesis, “**a key challenge is representing the behavior of a partially written program before it can be executed**.”
+- Their solution is a compositional, approximate representation: “**neural abstract semantics**” and “**blended abstract semantics**,” where the system “**concretely execut[es] program components whenever possible, and otherwise, approximat[es] program state with a learned abstract execution model**.”
+- They claim this helps synthesizers “**use more powerful language constructs, such as loops and higher-order functions**,” and improve accuracy “**for a given search budget**.”
+
+So, across the papers, scalable synthesis is described as coming from:
+1. **Modular verification / modular checking**
+2. **Decomposing specifications for subprograms**
+3. **Type-directed pruning of the search space**
+4. **Compositional representations of partial programs**
+5. **Approximate execution or abstract semantics when full execution is impossible**
+
+If you want, I can also summarize the differences between the two papers’ scalability strategies in one sentence.
+------------------------------------------------------------------------
+[2026-09-05T19:49:14] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617322), ('DBLP_conf_iclr_NyePBATS21', 0.8969420133435704)]
+verdict=pass
+answer=Across the papers in this collection, Armando Solar-Lezama appears in research on:
+
+- **AI for Software Engineering**
+  - The 2025 survey/position papers on “Challenges and Paths Towards AI for Software Engineering” and “Future Research and Challenges Remain Towards AI for Software Engineering” cover a broad range of software-engineering tasks and challenges.
+  - These include:
+    - **Code generation**
+    - **Code transformation**: “code refactoring,” “code migration and translation,” and “code optimization”
+    - **Software testing and program analysis**
+    - **Program repair**
+    - **Software maintenance**
+    - **Scaffolding and meta-code**
+    - **Formal verification**
+
+- **Program synthesis / partial-program reasoning**
+  - The ICLR 2021 paper “Representing Partial Programs with Blended Abstract Semantics” is about “synthesizing programs from examples” and representing “the behavior of partially written programs.”
+  - It specifically focuses on:
+    - **Neural program synthesis**
+    - **Execution-guided synthesis**
+    - **Abstract interpretation**
+    - **Neural abstract semantics / blended abstract semantics**
+    - Applying these ideas to synthesis domains like **tower construction, list processing, and string editing**
+
+So, summarizing the areas represented across his papers here: **AI for software engineering, program synthesis, code transformation, software testing and analysis, program repair, maintenance, formal verification, and semantic representations for partial programs using abstract interpretation/neural methods.**
+------------------------------------------------------------------------
+[2026-09-05T19:49:18] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T19:52:53] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151967)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+> “Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T19:52:56] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_fmsd_FismanSS21', 0.945769610049617), ('DBLP_conf_snapl_2015', 0.8668720175278459), ('DBLP_conf_aplas_2009', 0.8649937965478989)]
+verdict=pass
+answer=From the provided documents, the papers that list **Armando Solar-Lezama** as an author or co-author are:
+
+1. **Special Issue on Syntax-Guided Synthesis Preface**  
+   - Authors: “**Dana Fisman · Rishabh Singh · Armando Solar-Lezama**”
+
+2. **Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis**  
+   - Authors: “**Alvin Cheung, Shoaib Kamil, and Armando Solar-Lezama**”
+
+3. **An empirical study of adaptive concretization for parallel program synthesis**  
+   - Cited in the FMSD preface as: “**An empirical study of adaptive concretization for parallel program synthesis[4]**”
+   - The reference lists the authors as: “**Jeon J, Qiu X, Solar-Lezama A, Foster JS**”
+
+4. **Refutation-based synthesis in SMT**  
+   - Cited in the FMSD preface as: “**Refutation-based synthesis in SMT [8]**”
+   - The reference lists the authors as: “**Reynolds A, Kuncak V, Tinelli C, Barrett CW, Deters Morgan**”
+   - Armando Solar-Lezama is **not** listed in the reference, so this one should **not** be included.
+
+So the confirmed papers in the documents are **1, 2, and 3** above.
+------------------------------------------------------------------------
+[2026-09-05T19:52:58] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747687016567), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285268), ('DBLP_conf_sat_2012', 0.8781592438705598)]
+verdict=pass
+answer=Based on the provided documents, Armando Solar-Lezama’s primary research focus appears to be **program synthesis**, especially **syntax-guided synthesis**.
+
+The clearest evidence is the paper:
+
+- **“Special Issue on Syntax-Guided Synthesis Preface”** — it says, *“Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis.”*  
+  It also states that this area is a research thread in *“program synthesis and program optimization.”*
+
+In the other document, Solar-Lezama is also listed as an author of:
+
+- **“Challenges and Paths Towards AI for Software Engineering”**, which covers broader AI-for-software-engineering topics.
+
+So, from the papers in this collection, his main research focus is **program synthesis / syntax-guided synthesis**, with related work in **software engineering and program optimization**.
+------------------------------------------------------------------------
+[2026-09-05T19:53:01] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112648702107), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112574988297), ('DBLP_conf_iclr_NyePBATS21', 0.8540088914619708)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on **modularity** and on **good representations of partial programs**.
+
+From the refinement-types paper, the key idea is:
+
+- “**The key to scalable program synthesis is modular veriﬁcation.**”
+- Modularity lets the synthesizer “**prune candidates for different subprograms independently**,” which “**combinatorially reduc[es] the size of the search space**.”
+- They argue that type-directed synthesis is successful because “**a type error can be detected long before the whole program is put together**.”
+- Their approach uses “**polymorphic reﬁnement types**” because they offer “**a unique combination of expressive power and decidability**,” and they introduce “**local liquid type checking**” to support “**specification decomposition**” and “**modular checking of function applications**” and branching terms.
+
+From the neural-abstract-semantics paper, scalability is described differently but with the same goal of making search manageable:
+
+- Synthesizing from examples requires searching “**a vast, combinatorial space of possible programs**.”
+- A key challenge is “**representing the behavior of a partially written program before it can be executed**.”
+- They propose “**blended abstract semantics**,” which uses “**a flexible combination of concrete execution state and learned neural representations**” so that partial programs can still be assessed during search.
+- This helps “**execution-guided synthesizers**” use more powerful constructs like “**loops and higher-order functions**” and improves synthesis “**for a given search budget**.”
+
+So, in short:  
+- one paper emphasizes **modular verification with refinement types** to prune the search space, and  
+- the other emphasizes **semantic representations of partial programs** to guide search efficiently.
+------------------------------------------------------------------------
+[2026-09-05T19:53:04] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331628669617325), ('DBLP_journals_corr_abs-1803-07244', 0.7800106831781202)]
+verdict=pass
+answer=Across the papers in this collection written by Armando Solar-Lezama, the represented research areas are:
+
+- **AI for software engineering / machine programming**
+  - The 2025 paper frames this as “**AI for software engineering**” and discusses tasks, challenges, and directions toward automated software engineering.
+  - The 2018 position paper frames the broader area as “**machine programming**,” defined as systems that automate “**some or all of the steps of turning the user’s intent into an executable program and maintaining that program over time**.”
+
+- **Software engineering tasks and subareas**
+  - The 2025 paper covers a structured taxonomy including:
+    - “**Code Generation**”
+    - “**Code Transformation**”
+    - “**Software Testing and Program Analysis**”
+    - “**Software Maintenance**”
+    - “**Scaffolding and Meta-Code**”
+    - “**Formal Verification**”
+
+- **Program synthesis / automated programming**
+  - The 2018 paper explicitly says the broader field includes “**program synthesis**” and automatic programming, and it focuses on the pillars of machine programming.
+
+- **Software maintenance**
+  - The 2018 paper says programs must be maintained “**as it adapts to changes in the program’s goals, errors in the program, and the features in new computer platforms**.”
+  - The 2025 paper also includes maintenance-related tasks like documentation, PR review, and code understanding.
+
+- **Software verification / formal reasoning**
+  - The 2025 paper includes “**Formal Verification**.”
+  - The 2018 paper discusses “**verified lifting**” and its interaction with the three pillars.
+
+- **Program analysis and testing**
+  - The 2025 paper includes “**Software Testing and Program Analysis**.”
+  - The 2018 paper mentions automated reasoning tools such as “**SAT and SMT solvers**” and deriving inputs that expose bugs.
+
+- **Human-computer / human-AI interaction for programming**
+  - The 2018 paper’s pillar of **intention** emphasizes “**the human-to-computer and computer-to-machine-learning interfaces**.”
+  - The 2025 paper similarly discusses “**Human-AI Collaboration**” as a challenge.
+
+If you want, I can also turn this into a concise table with paper → research areas.
+------------------------------------------------------------------------
+[2026-09-05T19:53:06] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T20:01:45] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405495294289), ('DBLP_journals_corr_abs-2302-01976', 0.9869492860151969)]
+verdict=pass
+answer=The first sentence is:
+
+“Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.”
+------------------------------------------------------------------------
+[2026-09-05T20:01:47] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_fmsd_FismanSS21', 0.9457696030147273), ('DBLP_conf_snapl_2015', 0.8668720492868585), ('DBLP_conf_aplas_2009', 0.864993792970987)]
+verdict=fail
+answer=From the provided documents, Armando Solar-Lezama appears as an author/co-author of these papers:
+
+1. **“Special Issue on Syntax-Guided Synthesis Preface”**  
+   - Authors listed: “Dana Fisman · Rishabh Singh · Armando Solar-Lezama”
+
+2. **“Bridging the Gap Between General-Purpose and Domain-Specific Compilers with Synthesis”**  
+   - Listed in the SNAPL’15 contents as: “Alvin Cheung, Shoaib Kamil, and Armando Solar-Lezama”
+
+3. **“Refutation-based synthesis in SMT”**  
+   - Cited in the FMSD preface as one of the special issue papers: “Refutation-based synthesis in SMT [8]”
+
+4. **“An empirical study of adaptive concretization for parallel program synthesis”**  
+   - Cited in the FMSD preface as one of the special issue papers: “An empirical study of adaptive concretization for parallel program synthesis [4]”
+
+5. **“Alloy*: a general-purpose higher-order relational constraint solver”**  
+   - Cited in the FMSD preface as one of the special issue papers: “Alloy* a general-purpose higher-order relational constraint solver [6]”
+
+The documents do **not** provide the full author lists for papers 3–5, but they do identify them as papers associated with the special issue where Armando Solar-Lezama is involved as a co-author of the preface.
+------------------------------------------------------------------------
+[2026-09-05T20:01:49] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747741449247), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285263), ('DBLP_conf_sat_2012', 0.8781592506970074)]
+verdict=pass
+answer=Based on the documents provided, Armando Solar-Lezama’s primary research focus appears to be **program synthesis / syntax-guided synthesis and closely related formal methods topics**.
+
+The clearest evidence is the 2021 paper:
+
+- **“Special Issue on Syntax-Guided Synthesis Preface”** by Dana Fisman, Rishabh Singh, and **Armando Solar-Lezama**.
+- It states: **“Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis.”**
+
+The paper also notes that this area connects to **program optimization**, **SMT-based synthesis**, and broader **formal methods**.
+
+So, based on the collection here, his primary research focus is **program synthesis, especially syntax-guided synthesis, within formal methods**.
+------------------------------------------------------------------------
+[2026-09-05T20:01:53] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112627090535), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112553346916), ('DBLP_conf_iclr_NyePBATS21', 0.8540088876375139)]
+verdict=pass
+answer=The papers describe scalability in different ways:
+
+- In **Program Synthesis from Polymorphic Refinement Types**, scalability comes from **modular verification** and **type-directed search**. The paper says, “**The key to scalable program synthesis is modular verification**,” because it lets the synthesizer “**prune candidates for different subprograms independently**,” reducing the search space. It also emphasizes that **polymorphic refinement types** combine “**expressive power and decidability**,” and that specifications can often be “**effectively decomposed into independent specifications for its components**.”
+
+  It further explains that the new checking method supports this decomposition: “**local liquid type checking**,” with “**top-down propagation of over-approximate type information**” and a “**liquid abduction rule**,” both intended to make checking and synthesis more modular.
+
+- In **Representing Partial Programs with Blended Abstract Semantics**, scalability comes from **better representations of partial programs** to guide search over a large combinatorial space. The paper says synthesis from examples requires “**searching over a vast, combinatorial space of possible programs**,” and the challenge is “**representing the behavior of a partially written program**” to judge whether it is on track. Their solution is “**blended abstract semantics**,” which combines “**concrete execution state and learned neural representations**” so that search can be guided even when programs are unfinished.
+
+So, both papers treat scalability as a matter of **reducing the effective search space**: one through **modular type-based verification**, and the other through **semantic representations of partial programs** that help guide search.
+------------------------------------------------------------------------
+[2026-09-05T20:01:57] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_conf_icml_GuJLSESS25', 0.9331629007175474), ('DBLP_journals_corr_abs-1803-07244', 0.78001068317812)]
+verdict=pass
+answer=Across the provided papers written by Armando Solar-Lezama, the research areas represented are:
+
+- **AI for software engineering / machine programming**  
+  The 2025 paper is explicitly about “**Challenges and Paths Towards AI for Software Engineering**,” and frames the field around “**tasks, challenges, and promising directions**” for AI-assisted software engineering.
+
+- **Programming-language and software-engineering tasks**  
+  The 2025 paper covers a broad taxonomy of SWE tasks, including:
+  - **Code generation**
+  - **Code transformation**
+    - code refactoring
+    - code migration and translation
+    - code optimization
+  - **Software testing and program analysis**
+    - software testing
+    - program analysis
+    - program repair
+  - **Software maintenance**
+    - code documentation and summarization
+    - pull request review
+    - code understanding, navigation, and question answering
+  - **Scaffolding and meta-code**
+  - **Formal verification**
+
+- **Human-AI interaction / intention in programming**  
+  The 2018 paper *The Three Pillars of Machine Programming* defines the pillar of **“intention”**, described as “**the ability of the machine to understand the programmer’s goals through more natural forms of interaction**.”
+
+- **Automated invention of algorithms and abstractions**  
+  The same 2018 paper defines **“invention”** as “**the ability of the machine to discover how to accomplish such goals; whether by devising new algorithms, or even by devising new abstractions**.”
+
+- **Autonomous software adaptation and maintenance**  
+  The 2018 paper defines **“adaptation”** as “**the ability to autonomously evolve software, whether to make it execute efficiently on new or existing platforms, or to fix errors and address vulnerabilities**.”
+
+In short, the collection spans **AI for software engineering**, **machine programming**, **program synthesis / code generation**, **program transformation**, **testing and analysis**, **repair and maintenance**, **formal verification**, and the broader research themes of **intention, invention, and adaptation**.
+------------------------------------------------------------------------
+[2026-09-05T20:02:00] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
+[2026-09-05T20:05:48] Q1: Quote the first sentence of the paper Improved modeling of RNA-binding protein motifs in an interpretable neural model of RNA splicing.
+retrieved=[('Gupta2024', 1.0), ('conf_iclr_gupta2025sparling', 0.9900405513325938), ('DBLP_journals_corr_abs-2302-01976', 0.9869492880747037)]
+verdict=pass
+answer=The first sentence of the paper is:
+
+“**Sequence-specific RNA-binding proteins (RBPs) play central roles in splicing decisions.**”
+------------------------------------------------------------------------
+[2026-09-05T20:05:51] Q2: List all papers where Armando Solar-Lezama is an author or co-author.
+retrieved=[('DBLP_journals_fmsd_FismanSS21', 0.9457696030147277), ('DBLP_conf_aplas_2009', 0.8649937929709871), ('DBLP_conf_cav_2015', 0.8548296155574476)]
+verdict=pass
+answer=From the provided documents, the only paper explicitly listed with Armando Solar-Lezama as an author/co-author is:
+
+- **“Special Issue on Syntax-Guided Synthesis Preface”** — authors: **Dana Fisman, Rishabh Singh, Armando Solar-Lezama**.
+
+The documents also mention Armando Solar-Lezama in connection with other papers in references or as an invited talk speaker, but they do **not** explicitly list him as an author of those papers in the provided text.
+------------------------------------------------------------------------
+[2026-09-05T20:05:53] Q3: Based on Armando Solar-Lezama's papers in the collection, what is his primary research focus?
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.9967747687016568), ('DBLP_journals_fmsd_FismanSS21', 0.9427310652285267), ('DBLP_conf_sat_2012', 0.8781592438705597)]
+verdict=pass
+answer=Based on the documents provided, Armando Solar-Lezama’s work is centered on **program synthesis and related formal-methods techniques**.
+
+The clearest evidence comes from the formal methods paper:
+
+- “**Syntax-guided synthesis has emerged as a practical solution to the computationally hard problem of program synthesis**.”
+- It also describes research on “**program synthesis and program optimization**.”
+
+And in the AI-for-software-engineering paper, he is listed as an author on a survey that includes topics such as:
+
+- “**Code Generation**”
+- “**Program Repair**”
+- “**Formal Verification**”
+
+So, based on the collection here, his **primary research focus appears to be program synthesis, especially syntax-guided synthesis, with broader interests in formal methods and software engineering automation**.
+------------------------------------------------------------------------
+[2026-09-05T20:05:57] Q4: How do the papers describe scalable program synthesis techniques?
+retrieved=[('DBLP_conf_pldi_PolikarpovaKS16', 0.8920112676959249), ('DBLP_journals_corr_PolikarpovaS15', 0.8920112603245438), ('DBLP_conf_iclr_NyePBATS21', 0.854008894287673)]
+verdict=pass
+answer=The papers describe scalable program synthesis as relying on better ways to prune the search space and represent partial programs.
+
+From the reﬁnement-types paper, the key idea is:
+
+- “**The key to scalable program synthesis is modular veriﬁcation.**”
+- Modular verification “**enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.**”
+- They emphasize type-directed synthesis because “**a type error can be detected long before the whole program is put together.**”
+- They also argue that “**reﬁnement types offer the user a convenient interface to a program synthesizer**” because they combine “**expressive power and decidability**,” and that their system uses “**local liquid type checking**” to support “**speciﬁcation decomposition**.”
+
+From the blended-abstract-semantics paper, scalability comes from improving how partial programs are represented during search:
+
+- Synthesis from examples requires searching “**a vast, combinatorial space of possible programs**.”
+- A “**key challenge is representing the behavior of a partially written program before it can be executed**.”
+- Their answer is “**blended abstract semantics**,” a “**compositional, approximate execution model**” that uses concrete execution when possible and learned abstract semantics otherwise.
+- They say this helps search because it lets the system judge whether a partial program “**is on the right track**” and therefore “**guide search**.”
+- They report that these representations “**enable execution-guided synthesizers to use more powerful language constructs, such as loops and higher-order functions**,” and improve accuracy “**for a given search budget**.”
+
+So, in both papers, scalability is achieved by reducing search effort: one via modular type-based verification and spec decomposition, the other via better semantic representations of partial programs to guide search.
+------------------------------------------------------------------------
+[2026-09-05T20:06:00] Q5: Summarize all research areas represented across every paper written by Armando Solar-Lezama in the collection.
+retrieved=[('DBLP_journals_corr_abs-2503-22625', 0.999998414370958), ('DBLP_journals_corr_abs-1803-07244', 0.78001068317812), ('DBLP_conf_mapl_GottschlichSTCR18', 0.7800106785934817)]
+verdict=pass
+answer=Across the provided papers, Armando Solar-Lezama appears on two papers, and the research areas represented are:
+
+1. **AI for Software Engineering**
+   - In *“Challenges and Paths Towards AI for Software Engineering”*, the paper covers:
+     - code generation
+     - code transformation
+     - software testing and program analysis
+     - software maintenance
+     - scaffolding and meta-code
+     - formal verification
+   - It also discusses challenges such as “evaluation and benchmarks,” “effective tool usage,” “human-AI collaboration,” “long-horizon code planning,” and “semantic understanding of codebases.”
+
+2. **Machine Programming**
+   - In *“The Three Pillars of Machine Programming”*, the paper’s three main research pillars are:
+     - **intention**
+     - **invention**
+     - **adaptation**
+   - The paper says these pillars cover “the human-to-computer and computer-to-machine-learning interfaces,” “the creation or refinement of algorithms or core hardware and software building blocks through machine learning,” and “the use of ML-based constructs to autonomously evolve software.”
+
+So, summarized broadly, Armando Solar-Lezama’s papers in this collection span **AI/software engineering, machine programming, and specifically themes of intention, invention, adaptation, program synthesis, software maintenance, and verification**.
+------------------------------------------------------------------------
+[2026-09-05T20:06:04] FRAMEWORK VALIDATION
+good=fail manipulated=fail
+------------------------------------------------------------------------
