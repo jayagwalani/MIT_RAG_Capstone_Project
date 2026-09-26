@@ -1,0 +1,179 @@
+[2026-09-26T19:16:17] AGENT
+
+        QUESTION:
+        How do the papers describe scalable program synthesis techniques?
+
+        TOOL:
+        hybrid_search
+
+        DOCS:
+        ['DBLP_conf_pldi_PolikarpovaKS16', 'DBLP_journals_corr_PolikarpovaS15', 'DBLP_conf_iclr_InalaBTS20']
+
+        ANSWER:
+        The papers describe scalable program synthesis as relying on **modularity** and **type-directed verification**.
+
+From the PLDI paper:
+
+- “**The key to scalable program synthesis is modular verification**.”
+- “Modularity enables the synthesizer to prune candidates for different subprograms independently, whereby combinatorially reducing the size of the search space it has to consider.”
+- It also says type-directed approaches are successful because “**a type error can be detected long before the whole program is put together**.”
+
+They further argue that **polymorphic refinement types** make this practical because they combine:
+
+- “**expressive power and decidability**,” which “enables automatic verification—and hence synthesis—of nontrivial programs,” and
+- the ability to **decompose specifications into independent specifications for components**, reducing the search space.
+
+The paper on local liquid type checking adds that scalable synthesis needs **top-down propagation of specification information** rather than only bottom-up inference:
+
+- liquid type inference “propagates type information bottom-up,” but for synthesis “the top-level type is given, and the goal is to construct the program.”
+- Their solution is “**local liquid type checking**,” with “**round-trip type checking**” and a “**liquid abduction rule**” to check branches and applications modularly.
+- They also mention an incremental solver and “**MUSFIX**” for computing greatest fixpoints.
+
+The ICLR paper is about a different topic, but it also emphasizes that scalable learning of programmatic policies comes from **compact, structured state machines** with a small number of modes, which makes them easier to learn and generalize.
+
+So, overall, the papers present scalable synthesis as coming from:
+1. **modular checking/verification**,
+2. **strong but decidable specifications** such as refinement types,
+3. **specification decomposition / top-down guidance**, and
+4. **search-space reduction** through pruning impossible partial programs early.
+        
+------------------------------------------------------------------------
+[2026-09-26T19:16:32] AGENT
+
+        QUESTION:
+        How has Armando Solar-Lezama's research evolved from program synthesis toward AI for software engineering?
+
+        TOOL:
+        query_decomposition
+
+        DOCS:
+        ['DBLP_conf_icml_LiPS24', 'DBLP_journals_corr_abs-2406-07897', 'DBLP_conf_icml_GuJLSESS25']
+
+        ANSWER:
+        From the provided documents, Armando Solar-Lezama appears as a coauthor on a 2024 RL theory paper and a 2025 AI-for-software-engineering position paper, but the documents do **not** explicitly describe his research evolution from program synthesis toward AI for software engineering.
+
+What the documents do show is that the 2025 paper frames AI for software engineering as a broad area covering tasks like code generation, refactoring, migration, optimization, testing, and program analysis: “**AI for software engineering has made remarkable progress**” and the paper provides “**a taxonomy of concrete tasks in AI for software engineering**.”
+
+The documents also note broader applications of RL in “**program synthesis**” and “**mathematical reasoning**,” but they do not connect this directly to Armando Solar-Lezama’s personal research trajectory. So, based only on these documents, I can say he is associated with work spanning program synthesis-related themes and later AI for software engineering, but I cannot confirm the specific evolution you ask about.
+        
+------------------------------------------------------------------------
+[2026-09-26T19:17:00] AGENT
+
+        QUESTION:
+        Across Armando Solar-Lezama's papers, how do program synthesis, formal verification, and AI for software engineering connect to one another as part of a broader research agenda?
+
+        TOOL:
+        graph_retrieval
+
+        DOCS:
+        ['DBLP_conf_aplas_2009', 'DBLP_conf_hybrid_HuntFMHDS21', 'DBLP_journals_corr_0002S16', 'DBLP_conf_icml_PuMSK18', 'DBLP_conf_cvpr_WillisJCT0GSTLS22', 'DBLP_journals_pacmpl_FeserM0S20', 'DBLP_conf_sat_Inala0S16', 'DBLP_journals_pacmpl_KoppelSS18', 'DBLP_conf_icml_GuJLSESS25', 'DBLP_conf_plas_AustinYFS13', 'DBLP_journals_corr_abs-1802-07384', 'DBLP_conf_iclr_OlaussonIW0S24', 'DBLP_conf_nips_Inala0PPB0RS20', 'Ellis22Linguistics', 'DBLP_journals_cacm_AlurSFS18']
+
+        ANSWER:
+        Across the provided papers, Armando Solar-Lezama’s work connects **program synthesis**, **formal verification**, and **AI for software engineering** as parts of a common agenda of **building tools that can automatically produce correct, efficient, and domain-adapted software artifacts**.
+
+### 1) Program synthesis as a core technique for generating software artifacts
+Several papers frame synthesis as a way to automatically construct programs, encoders, or transformations from specifications:
+
+- In *Automatic Generation of Formula Simplifiers based on Conditional Rewrite Rules*, the goal is “**to automatically generate a formula simplifier from a corpus of benchmark problems**.”
+- In *Synthesis of Domain Specific CNF Encoders for Bit-Vector Solvers*, the paper says it uses “**program synthesis and machine learning technology … to automatically generate code**” for bit-vector-to-CNF translation.
+- In *Selecting Representative Examples for Program Synthesis*, synthesis is described as constructing programs from examples and improving scalability by selecting “**a small and representative**” subset of examples.
+- In *Deductive Optimization of Relational Data Storage*, the system uses “**deductive synthesis to turn a high-level relational representation … into a highly optimized low-level implementation**.”
+- In *Faceted Execution of Policy-Agnostic Programs*, the runtime and policies are organized so the system can enforce confidentiality while programming in a policy-agnostic style.
+
+So synthesis is not just about generating code from examples; it is also about generating **encoders, simplifiers, optimizers, policies, and runtime mechanisms**.
+
+### 2) Formal verification provides the correctness and safety guarantees
+Formal methods appear as the mechanism that makes synthesized or learned systems trustworthy:
+
+- In *Verifiably Safe Exploration for End-to-End Reinforcement Learning*, the paper contrasts itself with prior methods and emphasizes that it “**prove[s] that our method of enforcing the safety constraints preserves all safe policies**,” and that “**our formal safety constraints**” are used to enforce safety.
+- In *Automatic Generation of Formula Simplifiers*, synthesized simplifications are meant for formulas used by solver-based tools, where correctness matters.
+- In *Synthesis of Domain Specific CNF Encoders*, the encoders are generated within a setting that explicitly optimizes for properties like “**propagation completeness**,” which is a solver-oriented correctness/performance criterion.
+- In *Faceted Execution of Policy-Agnostic Programs*, the paper states: “**We provide a proof of termination-insensitive non-interference**.”
+
+This shows formal verification is not separate from synthesis; it is what makes synthesized systems reliable enough to use in security, solving, and control settings.
+
+### 3) AI for software engineering broadens synthesis into practical developer tools
+The more recent AI-for-SE perspective frames these techniques as part of a larger effort to automate software work:
+
+- *Position: Future Research and Challenges Remain Towards AI for Software Engineering* explicitly says its goal is to provide “**a taxonomy of measures and tasks to categorize work towards AI software engineering**” and to outline “**key bottlenecks**” and “**promising research directions**.”
+- It covers tasks such as “**Code Generation**,” “**Code Transformation**,” “**Code Optimization**,” and “**Software Testing and Program Analysis**.”
+
+This places synthesis and verification inside a broader AI-for-SE agenda: not just writing programs, but also transforming, optimizing, testing, and analyzing them.
+
+### 4) The unifying theme: automate but preserve structure, correctness, and scalability
+Taken together, the papers suggest a single research direction:
+
+- **Use synthesis** to search large program spaces.
+- **Use formal verification** to ensure synthesized artifacts satisfy safety, correctness, security, or semantic constraints.
+- **Use AI/ML** to make synthesis practical at scale, by selecting examples, learning patterns, or guiding search.
+
+This is visible especially in papers like:
+- *Synthesis of Domain Specific CNF Encoders…* — synthesis + machine learning for solver components.
+- *Selecting Representative Examples for Program Synthesis* — neural guidance to improve synthesis scalability.
+- *Verifiably Safe Exploration…* — visual perception + formal constraints + RL.
+- *Position: Future Research and Challenges Remain Towards AI for Software Engineering* — a broad agenda that includes these problems as major AI-for-SE tasks.
+
+### Bottom line
+Across these papers, Solar-Lezama’s research agenda is to **combine AI methods with synthesis and verification so that software tools can automatically discover solutions, while still being correct, safe, and useful in real systems**.
+
+If you want, I can also turn this into a shorter “one-paragraph summary” or a “timeline of themes across the papers.”
+        
+------------------------------------------------------------------------
+[2026-09-26T19:17:14] AGENT
+
+        QUESTION:
+        List all papers where Armando Solar-Lezama is an author or co-author and summarize the major research areas represented across those papers.
+
+        TOOL:
+        author_lookup
+
+        DOCS:
+        ['conf_iclr_gupta2025sparling', 'conf_nips_li2025encompass', 'DBLP_conf_acl_GuLJOLSS24', 'DBLP_conf_aplas_2009', 'DBLP_conf_aplas_Solar-Lezama09', 'DBLP_conf_cav_ChaudhuriS11', 'DBLP_conf_cav_ChaudhuriS12', 'DBLP_conf_cav_JeonQSF15', 'DBLP_conf_cav_SinghS12', 'DBLP_conf_cidr_CheungAMSM13', 'DBLP_conf_cikm_CheungSM12', 'DBLP_conf_cvpr_WillisJCT0GSTLS22', 'DBLP_conf_emnlp_OlaussonGLZSTL23', 'DBLP_conf_hvc_GaneshMSR12', 'DBLP_conf_hybrid_HuntFMHDS21']
+
+        ANSWER:
+        From the provided documents, Armando Solar-Lezama is an author or co-author on the following papers:
+
+- **SPARLING: End-to-End Spatial Concept Learning via Extremely Sparse Activations**
+- **ENCOMPASS: Enhancing Agent Programming with Search Over Program Execution Paths**
+- **The Counterfeit Conundrum: Can Code Language Models Grasp the Nuances of Their Incorrect Generations?**
+- **The Sketching Approach to Program Synthesis**
+- **Smoothing a Program Soundly and Robustly**
+- **Euler: A System for Numerical Optimization of Programs**
+- **Adaptive Concretization for Parallel Program Synthesis**
+- **SPT: Storyboard Programming Tool**
+- **StatusQuo: Making Familiar Abstractions Perform Using Program Analysis**
+- **Using Program Synthesis for Social Recommendations**
+- **JoinABLe: Learning Bottom-up Assembly of Parametric CAD Joints**
+- **LINC: A Neurosymbolic Approach for Logical Reasoning by Combining Language Models with First-Order Logic Provers**
+- **Word Equations with Length Constraints: What’s Decidable?**
+- **Verifiably Safe Exploration for End-to-End Reinforcement Learning**
+
+Major research areas represented across these papers include:
+
+1. **Program synthesis and programming-by-example**
+   - e.g. *The Sketching Approach to Program Synthesis*, *Euler*, *Adaptive Concretization*, *SPT*.
+   - These focus on generating programs or filling in program “holes” under specifications.
+
+2. **Program analysis and optimization**
+   - e.g. *Smoothing a Program Soundly and Robustly*, *StatusQuo*.
+   - These use analysis/transformations to improve reasoning or performance.
+
+3. **Neurosymbolic / hybrid AI reasoning**
+   - e.g. *LINC*, *Verifiably Safe Exploration for End-to-End Reinforcement Learning*.
+   - These combine learned components with symbolic provers or formal constraints.
+
+4. **Machine learning for structured domains**
+   - e.g. *SPARLING*, *JoinABLe*, *Using Program Synthesis for Social Recommendations*.
+   - These apply learning to spatial concepts, CAD assembly, or recommendation.
+
+5. **Language-model-based agent programming**
+   - e.g. *ENCOMPASS*, *The Counterfeit Conundrum*.
+   - These concern LLM agents, search over execution paths, and understanding/fixing model outputs.
+
+6. **Formal methods / decidability / string constraints**
+   - e.g. *Word Equations with Length Constraints: What’s Decidable?*
+   - This is about theoretical limits of satisfiability and decidability for string constraints.
+
+In short, the documents show Solar-Lezama’s work spanning **program synthesis, program analysis, formal methods, neurosymbolic systems, and learning-based systems for structured tasks**.
+        
+------------------------------------------------------------------------
